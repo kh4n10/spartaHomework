@@ -13,6 +13,12 @@ body {
   background-repeat: repeat-x;
 }
 
+.phones {
+	position: absolute;
+	top: 15%;
+	left: 10%;
+}
+
 .content {
 	border: 2px solid black;
 	display: inline-block;
@@ -20,11 +26,15 @@ body {
 	height: 300px;
 	width: 550px;
 	list-style: none;
+	position: absolute;
+	top: 11%;
+	left: 20%;
+
 }
 
 .gram-logo {
-float: right;
-margin: 100 100;
+	float: right;
+	margin: 7.5% 40%;
 }
 
 .h2 {
@@ -36,4 +46,7 @@ margin: 100 100;
 	color: #1c5380;
 	font-weight: normal;
 	text-align: center;
+	position: fixed;
+	left: 35%;
+	bottom: 15%;
 }
