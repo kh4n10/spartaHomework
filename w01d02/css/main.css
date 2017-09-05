@@ -13,10 +13,24 @@ body {
   background-repeat: repeat-x;
 }
 
+.content {
+	border: 2px solid black;
+	display: inline-block;
+	height: 200px;
+	width: 550px;
+	list-style: none;
+}
+
 .gram-logo {
 	border: 2px solid black;
 }
 
 .h2 {
 	color: #06365f;
+}
+
+.footer {
+	list-style: none;
+	color: #1c5380;
+	font-weight: normal;
 }
