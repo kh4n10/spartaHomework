@@ -23,7 +23,8 @@ body {
 }
 
 .gram-logo {
-	border: 2px solid black;
+float: right;
+margin: 100 100;
 }
 
 .h2 {
@@ -34,4 +35,5 @@ body {
 	list-style: none;
 	color: #1c5380;
 	font-weight: normal;
+	text-align: center;
 }
