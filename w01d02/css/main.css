@@ -16,7 +16,8 @@ body {
 .content {
 	border: 2px solid black;
 	display: inline-block;
-	height: 200px;
+	border-radius: 25px;
+	height: 300px;
 	width: 550px;
 	list-style: none;
 }
