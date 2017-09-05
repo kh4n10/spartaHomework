@@ -14,16 +14,17 @@ body {
 }
 
 .phones {
+	display: inline-block;
 	position: absolute;
 	top: 15%;
 	left: 10%;
 }
 
 .content {
-	border: 2px solid black;
+	border: 2px solid white;
 	display: inline-block;
-	border-radius: 25px;
-	height: 300px;
+	border-radius: 5px;
+	height: 300px; 
 	width: 550px;
 	list-style: none;
 	position: absolute;
@@ -32,13 +33,19 @@ body {
 	background-color: white;
 }
 
+.images-content {
+	text-align: : center;
+}
+
 .gram-logo {
+	display: inline-block;
 	float: right;
 	margin: 7.5% 40%;
 }
 
 .h2 {
 	color: #06365f;
+	line-height: 35%;
 }
 
 .footer {
@@ -49,4 +56,5 @@ body {
 	position: fixed;
 	left: 35%;
 	bottom: 15%;
+	word-spacing: 10px;
 }
