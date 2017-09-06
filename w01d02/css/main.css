@@ -24,8 +24,8 @@ body {
 	border: 2px solid white;
 	display: inline-block;
 	border-radius: 5px;
-	height: 300px; 
-	width: 550px;
+	height: 40%; 
+	width: 50%;
 	list-style: none;
 	position: absolute;
 	top: 26.5%;
@@ -51,7 +51,7 @@ body {
 .footer {
 	list-style: none;
 	color: #1c5380;
-	font-weight: normal;
+	font-weight: bold;
 	text-align: center;
 	position: fixed;
 	left: 35%;
