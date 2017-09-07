@@ -84,11 +84,10 @@ nav.navbar {
 
 .cardsVid {
 	background-color: #f2efc7;
-	border: 1px solid black;
+	border: 1px solid #f2efc7;
 	border-style: solid;
 	border-width: medium;
 	border-radius: 10px;
-	border-color: #f2efc7;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
