@@ -20,17 +20,19 @@ body {
 	left: 10%;
 }
 
+ul.content {
+	background-image: url("../images/frame.png");
+	width: 504px;
+	height: 284px;
+}
+
 .content {
-	border: 2px solid white;
 	display: inline-block;
 	border-radius: 5px;
-	height: 40%; 
-	width: 37.5%;
 	list-style: none;
 	position: absolute;
 	top: 26.5%;
 	left: 36.5%;
-	background-color: white;
 }
 
 .images-content {
@@ -56,5 +58,4 @@ body {
 	position: fixed;
 	left: 35%;
 	bottom: 15%;
-	word-spacing: 10px;
 }

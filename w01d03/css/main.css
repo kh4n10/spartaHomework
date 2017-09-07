@@ -1,0 +1,38 @@
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #f2efc7;
+	font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+	list-style: none;
+	color: blue;
+	text-align: center;
+}
+
+.navbarDesign {
+	color: blue;
+}
+.jumboDesign {
+	background-color: #f2efc7;
+	border: 1px solid black;
+	border-style: solid;
+	border-width: medium;
+	border-radius: 20px;
+	margin: 0 25% 2% 10%;
+}
+
+.h1Jumbo {
+	color: blue;
+}
+
+.h3Jumbo {
+	color: blue;
+}
+
+
+.courseCard {
+	margin: 100px 0 10px 0;
+}
