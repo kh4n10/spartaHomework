@@ -11,7 +11,7 @@ body {
 	border-bottom: : 1px solid black;
 	border-bottom-color: purple;
 	border-bottom-style: solid;
-	border-bottom-width-width: medium;
+	border-bottom-width: medium;
 }
 
 
@@ -70,16 +70,40 @@ nav.navbar {
 	margin-bottom: 10px;
 }
 
+
+.vidCard {
+	background-color: #f2efc7;
+	border: 1px #f2efc7;
+	border-style: solid;
+	border-width: medium;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.cardsVid {
+	background-color: #f2efc7;
+	border: 1px solid black;
+	border-style: solid;
+	border-width: medium;
+	border-radius: 10px;
+	border-color: #f2efc7;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 .skyline {
 	width: auto;
 	max-height: 210px;
 }
 
 
-.okayVideo {
+.imageVideo {
 	width: auto;
 	max-height: 210px;
 }
+
 
 .footerCard {
 	background-color: #f2efc7;
