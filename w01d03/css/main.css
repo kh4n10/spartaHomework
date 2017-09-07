@@ -2,37 +2,88 @@
 body {
 	height: 100vh;
 	width: 100vw;
-	background-color: #f2efc7;
+	background-color: grey;
 	font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar {
 	list-style: none;
-	color: blue;
-	text-align: center;
+	border-bottom: : 1px solid black;
+	border-bottom-color: purple;
+	border-bottom-style: solid;
+	border-bottom-width-width: medium;
 }
 
-.navbarDesign {
-	color: blue;
+
+nav.navbar {
+	border-bottom: : 1px solid black;
+	border-bottom-style: solid;
+	border-bottom-width-width: medium;
+	border-bottom-color: black;
 }
+
+.navDesign {
+	color: grey;
+}
+
+
+.heading {
+	text-align: center;
+	text-decoration: underline;
+	color: purple;
+}
+
+
 .jumboDesign {
 	background-color: #f2efc7;
 	border: 1px solid black;
 	border-style: solid;
 	border-width: medium;
 	border-radius: 20px;
-	margin: 0 25% 2% 10%;
+	margin: 2% 25% 2% 25%;
 }
 
-.h1Jumbo {
+.headJumbo {
 	color: blue;
-}
-
-.h3Jumbo {
-	color: blue;
+	text-align: center;
 }
 
 
-.courseCard {
-	margin: 100px 0 10px 0;
+.imageSize {
+	width: auto;
+	max-height: 210px;
+}
+
+
+.imageRadius {
+	border-radius: 25px;
+}
+
+.cards {
+	background-color: #f2efc7;
+	border: 1px solid black;
+	border-style: solid;
+	border-width: medium;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.cards {
+	background-color: #f2efc7;
+	border: 1px solid black;
+	border-style: solid;
+	border-width: medium;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.footerCard {
+	background-color: #f2efc7;
+	border-radius: 10px;
+}
+
+.navbar-centre {
+	margin: 0 auto;
 }
