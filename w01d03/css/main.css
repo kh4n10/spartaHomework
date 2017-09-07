@@ -59,6 +59,7 @@ nav.navbar {
 	border-radius: 25px;
 }
 
+
 .cards {
 	background-color: #f2efc7;
 	border: 1px solid black;
@@ -69,15 +70,16 @@ nav.navbar {
 	margin-bottom: 10px;
 }
 
-div.cards {
-	background-color: #f2efc7;
-	border: 1px solid black;
-	border-style: solid;
-	border-width: medium;
-	margin-top: 10px;
-	margin-bottom: 10px;
+.skyline {
+	width: auto;
+	max-height: 210px;
 }
 
+
+.okayVideo {
+	width: auto;
+	max-height: 210px;
+}
 
 .footerCard {
 	background-color: #f2efc7;
