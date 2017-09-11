@@ -1,8 +1,8 @@
 // The player move is gathered and stored in a variable
     // Prompt
-var compWin = 0;
+// var compWin = 0;
 
-for (var playerWin = 0; playerWin <=10; playerWin ++) {
+// for (var playerWin = 0; playerWin <=10; playerWin ++) {
 
 var playerChoice = prompt("Make a choice (r)ock, (p)apers or (s)cissors");
 
@@ -21,38 +21,59 @@ var computerChoice = Math.floor(Math.random()*3);
   // Alert
 
 
+switch (computerChoice) {
+	case if(playerChoice === "r" && computerChoice > 0):
+		alert("its a draw; computer chose rock");
+		alert("you lose; computer chose paper");
+		alert("you win; computer chose scissors");
+		break;
 
-if(playerChoice ==="r" && computerChoice ===2) {
-	alert("player won");
-}else if (playerChoice === "r" && computerChoice ===1) {
-	alert("computer won");
-	playerWin = playerWin - 1;
-	compWin++;
-}else if (playerChoice === "r" && computerChoice ===0) {
-	alert("its a draw")
+	case 1:
+		if(playerChoice === "p")
+		alert("its a draw; computer chose paper");
+		alert("you lose; computer chose scissors");
+		alert("you win; computer chose rock");
+		break;
+
+	case 2:
+		if(playerChoice === "s")
+		alert("its a draw; computer chose scissors");
+		alert("you lose; computer chose rock");
+		alert("you win; computer chose paper");
+		break;
 }
 
-if(playerChoice ==="s" && computerChoice ===1) {
-	alert("player won");
-}else if (playerChoice === "s" && computerChoice ===0) {
-	alert("computer won")
-}else if (playerChoice === "s" && computerChoice ===2) {
-	alert("its a draw")
-}
+// if(playerChoice ==="r" && computerChoice ===2) {
+// 	alert("player won");
+// }else if (playerChoice === "r" && computerChoice ===1) {
+// 	alert("computer won");
+// 	playerWin = playerWin - 1;
+// 	compWin++;
+// }else if (playerChoice === "r" && computerChoice ===0) {
+// 	alert("its a draw")
+// }
 
-if(playerChoice ==="p" && computerChoice ===0) {
-	alert("player won");
-}else if (playerChoice === "p" && computerChoice ===2) {
-	alert("computer won")
-}else if (playerChoice === "p" && computerChoice ===1) {
-	alert("its a draw")
-}
+// if(playerChoice ==="s" && computerChoice ===1) {
+// 	alert("player won");
+// }else if (playerChoice === "s" && computerChoice ===0) {
+// 	alert("computer won")
+// }else if (playerChoice === "s" && computerChoice ===2) {
+// 	alert("its a draw")
+// }
+
+// if(playerChoice ==="p" && computerChoice ===0) {
+// 	alert("player won");
+// }else if (playerChoice === "p" && computerChoice ===2) {
+// 	alert("computer won")
+// }else if (playerChoice === "p" && computerChoice ===1) {
+// 	alert("its a draw")
+// }
 
 
 // BONUS
     // Update the scores for computer and player
 
-}
+// }
 
     // The first player to reach a score of 10 is the overall winner
 
