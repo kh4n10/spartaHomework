@@ -2,7 +2,7 @@ var compWin = 0;
 var playerWin = 0;
 // for (var playerWin = 0; playerWin <=10; playerWin ++) {
 
-while (compWin <= 10 || playerWin <= 10) {
+while (compWin < 10 && playerWin < 10) {
 
 var playerChoice = prompt("Make a choice (r)ock, (p)apers or (s)cissors");
 
