@@ -118,13 +118,18 @@ while (compWin < 10 && playerWin < 10) {
 
 // a simpler way of doing it with arrays
 
-// var playerMove = prompt("whats your move? r (0), p (1) or s (2)?");
-// var computerMove = Math.floor(Math.random()*3);
-
-// var moves = [
-// 	["draw", "win", "lose"],
-// 	["lose", "draw", "win"],
-// 	["win", "lose", "draw"]
+// var resultsMatrix = [
+//     ["draw", "win", "lose"],
+//     ["lose", "draw", "win"],
+//     ["win", "lose", "draw"]
 // ];
+// var moves = ["rock", "paper", "scissors"];
 
-// alert(moves[computerMove][playerMove]);
+// var playerMove = prompt("What's yo move - rock, paper or scissors?");
+// var playerIndex = moves.indexOf(playerMove);
+// var computerIndex = Math.floor(Math.random()*3);
+// var computerMove = moves[computerIndex];
+
+// alert("Computer chose " + computerMove);
+
+// alert(resultsMatrix[computerIndex][playerIndex]);
