@@ -4,83 +4,88 @@ var playerWin = 0;
 
 while (compWin < 10 && playerWin < 10) {
 
-var playerChoice = prompt("Make a choice (r)ock, (p)apers or (s)cissors");
+	var playerChoice = prompt("Make a choice (r)ock, (p)apers or (s)cissors");
 
 // The app generates a random computer move
   // Math.random, Math.floor 
 // The computer move is stored in a variable
 
-var computerChoice = Math.floor(Math.random()*3);
-
-// Compare moves and see who has won, or if it's a draw
-  // If the moves are the same, it's a draw
-  // Rock beats scissors
-  // Scissors beat paper
-  // Paper beats rock
- // Tell the user the outcome of the game
-  // Alert
-
-if(playerChoice === "r") {
-	switch (computerChoice) {
-		case 0:
-			alert("its a draw; computer chose rock");
-			break;
+	var computerChoice = Math.floor(Math.random()*3);
 	
-		case 1:
-			alert("you lose; computer chose paper");
-			compWin = compWin + 1;
-			alert("computer:"+compWin+ "player:"+playerWin);			
-			break;
+	// Compare moves and see who has won, or if it's a draw
+	  // If the moves are the same, it's a draw
+	  // Rock beats scissors
+	  // Scissors beat paper
+	  // Paper beats rock
+	 // Tell the user the outcome of the game
+	  // Alert
 	
-		case 2:
-			alert("you win; computer chose scissors");
-			playerWin = playerWin + 1;
-			alert("computer:"+compWin+ "player:"+playerWin);
-			break;
+	if(playerChoice === "r") {
+		switch (computerChoice) {
+			case 0:
+				alert("its a draw; computer chose rock");
+				break;
+		
+			case 1:
+				alert("you lose; computer chose paper");
+				compWin = compWin + 1;
+				alert("computer:"+compWin+ "player:"+playerWin);			
+				break;
+		
+			case 2:
+				alert("you win; computer chose scissors");
+				playerWin = playerWin + 1;
+				alert("computer:"+compWin+ "player:"+playerWin);
+				break;
+		}
 	}
-}
-
-
-if(playerChoice === "s") {
-	switch (computerChoice) {
-		case 0:
-			alert("you lose; computer chose rock");
-			compWin = compWin + 1;
-			alert("computer:"+compWin+ "player:"+playerWin);
-			break;
 	
-		case 1:
-			alert("you win; computer chose paper");
-			playerWin = playerWin + 1;
-			alert("computer:"+compWin+ "player:"+playerWin);
-			break;
 	
-		case 2:
-			alert("its a draw; computer chose scissors");
-			break;
+	if(playerChoice === "s") {
+		switch (computerChoice) {
+			case 0:
+				alert("you lose; computer chose rock");
+				compWin = compWin + 1;
+				alert("computer:"+compWin+ "player:"+playerWin);
+				break;
+		
+			case 1:
+				alert("you win; computer chose paper");
+				playerWin = playerWin + 1;
+				alert("computer:"+compWin+ "player:"+playerWin);
+				break;
+		
+			case 2:
+				alert("its a draw; computer chose scissors");
+				break;
+		}
 	}
-}
-
-
-if(playerChoice === "p") {
-	switch (computerChoice) {
-		case 0:
-			alert("you win; computer chose rock");
-			playerWin = playerWin + 1;
-			alert("computer:"+compWin+ "player:"+playerWin);
-			break;
 	
-		case 1:
-			alert("its a draw; computer chose paper");
-			break;
 	
-		case 2:
-			alert("you lose; computer chose scissors");
-			compWin = compWin + 1;
-			alert("computer:"+compWin+ "player:"+playerWin);
-			break;
+	if(playerChoice === "p") {
+		switch (computerChoice) {
+			case 0:
+				alert("you win; computer chose rock");
+				playerWin = playerWin + 1;
+				alert("computer:"+compWin+ "player:"+playerWin);
+				break;
+		
+			case 1:
+				alert("its a draw; computer chose paper");
+				break;
+		
+			case 2:
+				alert("you lose; computer chose scissors");
+				compWin = compWin + 1;
+				alert("computer: "+compWin+ " player: "+playerWin);
+				break;
+		}
 	}
-}
+
+	if(playerWin === 2 || compWin === 2) {
+		alert(compWin.toString() + " " + playerWin.toString());
+		var reset = prompt("would you like to play again?");
+	}
 }
 
 
@@ -111,11 +116,15 @@ if(playerChoice === "p") {
 // }
 
 
-// BONUS
-    // Update the scores for computer and player
+// a simpler way of doing it with arrays
 
-// }
+// var playerMove = prompt("whats your move? r (0), p (1) or s (2)?");
+// var computerMove = Math.floor(Math.random()*3);
 
-    // The first player to reach a score of 10 is the overall winner
+// var moves = [
+// 	["draw", "win", "lose"],
+// 	["lose", "draw", "win"],
+// 	["win", "lose", "draw"]
+// ];
 
-    // Be able to reset the game
+// alert(moves[computerMove][playerMove]);
