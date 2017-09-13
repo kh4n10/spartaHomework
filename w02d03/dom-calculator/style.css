@@ -5,10 +5,8 @@ main {
 	height: 500px;
 	width: 400px;
 	border: 2px solid black;
-}
-
-ul {
-	list-style: none;
+	border-radius: 20px;
+	background-color: #1A334F;
 }
 
 #display {
@@ -16,6 +14,9 @@ ul {
 	width: 380px;
 	margin: 10px auto;
 	border: 2px solid black;
+	border-radius: 15px;
+	background-color: #fff;
+	text-align: center;
 }
 
 button {
@@ -23,4 +24,5 @@ button {
 	font-size: 20px;
 	line-height: 1.5;
 	width: 40px;
+	background-color: #D8CBC3;
 }
