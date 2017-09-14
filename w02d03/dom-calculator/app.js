@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	var numbers = document.getElementsByClassName("numbers");
 	var display = document.getElementById("display");
-	var value1 = "";
-	var value2 = "";
+	var value1;
+	var value2;
 	var operators = document.getElementsByClassName("operators");
 	var reset = document.getElementsByClassName("reset");
 	var answer = document.getElementsByClassName("equals")[0];
-	
+	var operator;
 	// for (var i = 0; i < numbers.length; i++) {
 	// 	numbers[i].addEventListener("click", function(){
 	// 		display.innerText = this.value;
@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		for (var i = 0; i < operators.length; i++) {
 		operators[i].addEventListener("click", function(){
 			display.innerText = this.value;
+			operator = this.value;
 		})
 	};
 // the end
@@ -40,22 +41,24 @@ document.addEventListener("DOMContentLoaded", function () {
 		
 		answer.addEventListener("click", function(){
 
+			if (operator === "+") {
 				addition(value1, value2);
 				display.innerText = addition(value1, value2);
 				console.log(addition(value1, value2));
-
-
+			}else if (operator === "*") {
 				multiplication(value1, value2);
 				display.innerText = multiplication(value1, value2);
 				console.log(multiplication(value1, value2));
-
+			}else if (operator === "/") {
 				division(value1, value2);
 				display.innerText = division(value1,value2);
 				console.log(division(value1, value2));
-
+			}else if (operator === "-"){
 				subtraction(value1, value2);
 				display.innerText = subtraction(value1, value2);
 				console.log(subtraction(value1, value2));
+			}
+
 		});
 
 
