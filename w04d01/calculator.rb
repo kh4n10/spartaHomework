@@ -75,7 +75,7 @@ elsif choice === "bmi" then puts "if in kg and metres choose (1) or stones and c
 	num2 = gets.chomp.to_f
 	case choice
 	when "1"
-		bmi_one(num1, num2)
+		bmi_one(num1, num2).round
 	when "2"
 		bmi_two(num1, num2)
 	end
