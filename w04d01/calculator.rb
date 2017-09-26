@@ -28,7 +28,7 @@ def bmi_one (num1, num2)
 end
 
 def bmi_two (num1, num2)
-	puts ((num1 * 6.4) / (num2 / 100)) / (num2 / 100)
+	puts ((num1 * 6.35) / (num2 / 100)) / (num2 / 100)
 end
 # methods end
 
@@ -78,8 +78,7 @@ elsif choice === "bmi" then puts "if in kg and metres choose (1) or stones and c
 		bmi_one(num1, num2).round
 	when "2"
 		bmi_two(num1, num2)
-	end
-	
+	end	
 elsif choice != "b" || choice != "ad"
 	puts "Error, try again"
 # elsif choice != "a" || choice != "m" || choice != "s" || choice != "d" || choice != "p" || choice != "sq"
