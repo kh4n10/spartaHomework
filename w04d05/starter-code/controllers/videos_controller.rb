@@ -15,7 +15,7 @@ class VideosController < Sinatra::Base
 	# the index which shows everything on the root directory
 	get "/" do
 
-
+		@videos = Video.all
 		erb :'videos/index'
 	end
 
