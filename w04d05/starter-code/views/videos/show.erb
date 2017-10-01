@@ -1,8 +1,23 @@
-<h1><%= @video.title %></h1>
-<p><%= @video.description %></p>
-<a href="/<%= @video.id %>/edit">edit</a>
+<main>
+	<div class="container-fluid cards">
+		<div class="row">
+			<div class="col-md-4 col-centered">
+				<section class="aboutCard">
+					<div class="card showCard">
+		  			<div class="card-body">
+							<h2 class="heading"><%= @video.title %></h2>
+							<p><%= @video.description %></p>
 
-<form action="/<%= @video.id %>" method="POST">
-  <input type="hidden" name="_method" value="DELETE">
-  <input type="submit" value="Delete">
-</form> 
+							<button class="show"><a href="/<%= @video.id %>/edit">Edit</a></button>
+
+							<form action="/<%= @video.id %>" method="POST">
+							  <input type="hidden" name="_method" value="DELETE">
+							  <input type="submit" value="Delete" class="show">
+							</form>
+		  			</div>
+		  		</div>
+		  	</section>
+			</div>
+		</div>
+	</div>
+</main>

@@ -24,7 +24,7 @@ class Video
 	# the results variable runs the conn and sql variables
 	def self.all
 		conn = self.connect_database
-		sql = "SELECT id,title,description,url FROM post ORDER BY id;"
+		sql = "SELECT id,title,description,url FROM video_table ORDER BY id;"
 		results = conn.exec(sql)
 
 		results.map { |result| self.hydrate(result) }
@@ -36,7 +36,7 @@ class Video
 		# LIMIT method limits it so you can only get one video
 	def self.find(id)
 		conn = self.connect_database
-		sql = "SELECT id,title,description,url FROM post WHERE id = '#{id}' LIMIT 1;"
+		sql = "SELECT id,title,description,url FROM video_table WHERE id = '#{id}' LIMIT 1;"
 		results = conn.exec(sql)
 
 		self.hydrate(results[0])
@@ -47,10 +47,10 @@ class Video
   	conn = Video.connect_database
     if(!self.id) 
     	# Insert a new record in to the database
-    	sql = "INSERT INTO post (title,description,url) VALUES ( '#{self.title}', '#{self.description}', '#{self.url}')"
+    	sql = "INSERT INTO video_table (title,description,url) VALUES ( '#{self.title}', '#{self.description}', '#{self.url}')"
     else 
     	# Update an existing one
-    	sql = "UPDATE post SET title='#{self.title}', description='#{self.description}', url='#{self.url}' WHERE id = #{self.id}"
+    	sql = "UPDATE video_table SET title='#{self.title}', description='#{self.description}', url='#{self.url}' WHERE id = #{self.id}"
     end
 
   	conn.exec(sql)
@@ -58,7 +58,7 @@ class Video
 
   def self.destroy(id)
   	conn = self.connect_database
-  	sql = "DELETE FROM post WHERE id = '#{id}';"
+  	sql = "DELETE FROM video_table WHERE id = '#{id}';"
   	conn.exec(sql)
   end
 
