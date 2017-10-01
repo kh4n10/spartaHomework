@@ -1,0 +1,8 @@
+<h1><%= @video.title %></h1>
+<p><%= @video.description %></p>
+<a href="/<%= @video.id %>/edit">edit</a>
+
+<form action="/<%= @video.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete">
+</form> 
