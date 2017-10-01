@@ -56,9 +56,10 @@ class Video
   	conn.exec(sql)
   end
 
-  # def self.destroy(id)
-  # 	conn = self.open_connection
-  # 	sql = "DELETE FROM post WHERE id = Pd'#{id};"
-  # 	conn.exec(sql)
-  # end
+  def self.destroy(id)
+  	conn = self.connect_database
+  	sql = "DELETE FROM post WHERE id = '#{id}';"
+  	conn.exec(sql)
+  end
+
 end

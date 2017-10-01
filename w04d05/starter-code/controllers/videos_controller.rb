@@ -56,7 +56,7 @@ class VideosController < Sinatra::Base
     erb :'videos/edit'
 	end
 
-	# put the new editted form onto the specific id
+	# put the new/edited form onto the specific id
 	put "/:id" do
    
     # data is gathered in the params object
@@ -81,6 +81,14 @@ class VideosController < Sinatra::Base
 	# deletes the video
 	delete "/:id" do
 
+    # get the id of the video that wants deleting
+    id = params[:id].to_i
+
+    # delete the video from the array
+    Video.destroy(id)
+
+    # redirect back to the homepage
+    redirect "/"
 	end
 	
 end
