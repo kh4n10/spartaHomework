@@ -1,3 +1,4 @@
+<!-- the form  -->
 <form action="/<%= @video.id %>" method="POST">
   <div>
     <label>Title</label>
@@ -14,9 +15,8 @@
     <input type="text" name="url" placeholder="Enter a url" value="<%= @video.url %>">
   </div>
 
-  <div>
-    <input type="submit" value="Save Post">
-  </div>
+  <button class="show">Save Post</button>
+  
   <% if(@video.id) %>
     <input type="hidden" name="_method" value="PUT">
   <% end %>

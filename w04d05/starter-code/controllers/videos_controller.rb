@@ -19,7 +19,7 @@ class VideosController < Sinatra::Base
 		erb :'videos/index'
 	end
 
-	# create a new video link
+	# creates a new video, which links to the new.erb file
 	get "/new" do
 
 		@video = Video.new
@@ -27,14 +27,16 @@ class VideosController < Sinatra::Base
 	end
 
 	# gets the id of a specifc video that you want
-		# then is displayed by on html by using the show.erb
+		# then is displayed onto the html by using the show.erb
 	get "/:id" do
 		id = params[:id].to_i
 		@video = Video.find(id)
 		erb :'videos/show'
 	end	
 
-	# posting the form for creating a new video
+	# posts the form for creating a new video
+		# the params get the data from the hash and store it, however this links back to the video.rb file
+		# where the attr_accessor, hydrate method assists in this
 	post "/" do
 
     video = Video.new
@@ -46,7 +48,7 @@ class VideosController < Sinatra::Base
     redirect "/"
 	end
 	
-	# get the form for the specific id and then edit it
+	# gets the form for the specific id and then allows user to edit existing content
 	get "/:id/edit" do
     
     # get the ID and turn it in to an integer
@@ -56,7 +58,7 @@ class VideosController < Sinatra::Base
     erb :'videos/edit'
 	end
 
-	# put the new/edited form onto the specific id
+	# puts the new/edited form onto the specific id
 	put "/:id" do
    
     # data is gathered in the params object

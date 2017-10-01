@@ -8,7 +8,7 @@ class Video
 	end
 	
 	# hydrate allows the hash to be displayed onto the website and is then used within the all function
-		# the hash is displayed due to the index.erb
+		# the hash is displayed due to the index.erb on the html which links to the layout
 	def self.hydrate video_data
   	video = Video.new
 
@@ -43,6 +43,8 @@ class Video
 	end
 
 	# This function allows the new/edited form to be saved into the database
+	# if it does not = current id, then insert the new hash into the table
+	# else edit and update the table once the save post button has been clicked
 	def save
   	conn = Video.connect_database
     if(!self.id) 
