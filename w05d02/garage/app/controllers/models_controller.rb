@@ -1,0 +1,5 @@
+class ModelsController < ApplicationController
+
+	
+	
+end
