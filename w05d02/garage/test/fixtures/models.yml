@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  engine_size: 1
+  model_name: MyText
+  sold: 1
+
+two:
+  engine_size: 1
+  model_name: MyText
+  sold: 1
