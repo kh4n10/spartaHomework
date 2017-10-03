@@ -47,6 +47,7 @@ before_action :set_model, only: [:show, :edit, :update, :destroy]
       @model = Model.find(params[:id])
     end
 
+# have to include the company_id for the create to work, known as a foreign key
     def model_params
     	params.require(:model).permit(:name, :engine_size, :sold, :company_id)
     end
