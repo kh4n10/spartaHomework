@@ -18,7 +18,7 @@ before_action :set_company, only: [:show, :edit, :update, :destroy]
 	end
 
 	def create
-  	@company = Company.new(params[:name], params[:established], params[:description])
+  	@company = Company.new(company_params)
 
 		@company.save
     redirect_to companies_url, notice: 'Company was successfully created.'
@@ -26,6 +26,10 @@ before_action :set_company, only: [:show, :edit, :update, :destroy]
 
 
   def update
+  	@company.update(company_params)
+  	
+  	@company.save
+  	redirect_to companies_url, notice: 'Company was successfully updated.'
   end
 
 
@@ -41,6 +45,10 @@ before_action :set_company, only: [:show, :edit, :update, :destroy]
     
     def set_company
       @company = Company.find(params[:id])
+    end
+
+    def company_params
+    	params.require(:company).permit(:name, :established, :description)
     end
 
 
