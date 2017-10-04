@@ -18,9 +18,9 @@
         <td><%= car.name %></td>
         <td><%= car.model %></td>
         <td><%= car.description %></td>
-        <td><%= link_to 'Show', car %></td>
-        <td><%= link_to 'Edit', edit_car_path(car) %></td>
-        <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', user_car_path(car.user_id, car) %></td>
+        <td><%= link_to 'Edit', edit_user_car_path(car.user_id, car) %></td>
+        <td><%= link_to 'Destroy', user_car_path(current_user, car), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,5 +28,6 @@
 
 <br>
 
-<%= link_to 'New Car', new_car_path %>
-<%= current_user.email %>
+
+<%= link_to 'Create a new car here', new_user_car_path(current_user.id) %>
+
