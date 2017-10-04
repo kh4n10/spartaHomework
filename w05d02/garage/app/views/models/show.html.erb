@@ -11,5 +11,10 @@
   <%= @model.sold %>
 </p>
 
+<p>
+  <strong>Company:</strong>
+  <%= @model.company.name %>
+</p>
+
 <%= link_to 'Edit', edit_model_path(@model) %> |
 <%= link_to 'Back', models_path %>
