@@ -20,11 +20,11 @@ class CarsController < ApplicationController
   end
 
   def edit
-    @song = current_user.cars.find(params[:id])
+    @car = current_user.cars.find(params[:id])
   end
 
   def update
-    song = current_user.cars.find(params[:id])
+    @car = current_user.cars.find(params[:id])
     car.update(car_params)
     show_page = user_car_path(current_user.id, car.id)
     
